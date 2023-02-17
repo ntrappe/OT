@@ -1,0 +1,180 @@
+@import "./index.css";
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+
+    /* all boxes in same row match height */
+    height: 100%;
+    background-color: white;
+    border: 1.2px solid var(--med-grey);
+    border-radius: 8px;
+
+    /* top/bottom | left/right */
+    /* padding: 12px 20px; */
+    padding: 16px;
+    cursor: pointer;
+}
+
+#summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#summary-title,
+#details-title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    flex-grow: 0;
+}
+
+#summary-name {
+    /* so long names don't run into the step # */
+    padding-right: 5px;
+}
+
+#summary-description {
+    flex-grow: 1;
+    margin-top: 8px;
+    align-items: stretch;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#summary-time {
+    flex-grow: 0;
+    display: inline-block;
+}
+
+#details {
+    /* top/bottom | left/right */
+    padding: 10px 15px;
+}
+
+#details-title {
+    background-color: #eaeef2;
+    /* border: 1.2px solid var(--med-grey);
+    border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: -28px;
+    margin-left: -32px;
+    margin-right: -32px;
+    padding-left: 32px;
+    padding-right: 32px; */
+}
+
+#details-title h3 {
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+#details-title h4 {
+    font-size: 14px;
+}
+
+#time-icon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+#time-icon[class="fast"] {
+    background-color: var(--med-green);
+    border-color: var(--dark-green);
+}
+
+#time-icon[class="medium"] {
+    background-color: var(--med-yellow);
+    border-color: var(--dark-yellow);
+}
+
+#time-icon[class="slow"] {
+    background-color: var(--med-red);
+    border-color: var(--dark-red);
+}
+
+#time-icon {
+    background-color: var(--med-violet);
+    border-color: var(--dark-violet);
+}
+
+#time-number {
+    color: #596069;
+    font-size: 12px;
+}
+
+#wrapper[state="summary"]:hover {
+    background-color: var(--med-blue);
+    border-color: var(--dark-blue);
+}
+
+#wrapper[state="summary"]:hover h3 {
+    color: white;
+}
+
+#wrapper[state="summary"]:hover h4 {
+    color: var(--light-blue);
+}
+
+#wrapper[state="summary"]:hover p {
+    color: white;
+}
+
+#wrapper[state="summary"]:hover span {
+    color: white;
+}
+
+#wrapper[priority="high"] {
+    background-color: #ffeef3;
+    border-color: #f19c96;
+}
+
+#wrapper[priority="high"] h3,
+#wrapper[priority="high"] h4 {
+    color: #fc324a;
+}
+
+#wrapper[priority="high"]:hover {
+    background-color: #ff354c;
+    border-color: #c4091f;
+}
+
+#wrapper[priority="high"]:hover h4 {
+    color: #ffcfdd;
+}
+
+#wrapper[priority="med"] {
+    background-color: #efeeff;
+    border-color: #969df1;
+}
+
+#wrapper[priority="med"] h3,
+#wrapper[priority="med"] h4 {
+    color: #5032fc;
+}
+
+#wrapper[priority="med"]:hover {
+    background-color: #6d65ff;
+    border-color: #4735cd;
+}
+
+#wrapper[priority="med"]:hover h4 {
+    color: #ddcfff;
+}
+
+
+/* #summary-description {
+    margin-top: 10px;
+} */

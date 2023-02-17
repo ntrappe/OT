@@ -1,0 +1,9 @@
+{
+    "name":"Visual Studio Code",
+    "step":"12",
+    "section":"accessibility-list",
+    "description":"Choose styles, sizes, extensions, and assistive devices.",
+    "time":4,
+    "priority":"low"
+}
+ 

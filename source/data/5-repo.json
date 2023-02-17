@@ -1,0 +1,9 @@
+{
+    "name":"Repo",
+    "step":"5",
+    "section":"tools-list",
+    "description":"Clone the OS repository.",
+    "time":12,
+    "priority":"low"
+}
+ 

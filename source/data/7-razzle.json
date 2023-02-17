@@ -1,0 +1,9 @@
+{
+    "name":"Razzle",
+    "step":"7",
+    "section":"tools-list",
+    "description":"Compile and build your code.",
+    "time":10,
+    "priority":"low"
+}
+ 

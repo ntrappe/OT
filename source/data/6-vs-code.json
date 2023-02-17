@@ -1,0 +1,9 @@
+{
+    "name":"Visual Studio Code",
+    "step":"6",
+    "section":"tools-list",
+    "description":"Track files, changes, and write code.",
+    "time":2,
+    "priority":"low"
+}
+ 

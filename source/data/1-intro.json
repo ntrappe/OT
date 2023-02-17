@@ -1,0 +1,9 @@
+{
+    "name":"Intro",
+    "step":"1",
+    "section":"intro-list",
+    "description":"Welcome to onboarding!",
+    "time":2,
+    "priority":"low"
+}
+ 
